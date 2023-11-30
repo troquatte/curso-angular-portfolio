@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>Últimas Experiências</h2>
+
+  @for(item of arrayExperiences(); track item; let first = $first){
+  <details [open]="first">
+    <summary>
+      <strong> {{ item.summary.strong }} </strong>
+      {{ item.summary.p }}
+    </summary>
+    <p>
+      {{ item.text }}
+    </p>
+  </details>
+  }
+</div>

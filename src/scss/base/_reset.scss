@@ -1,0 +1,36 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--black);
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 22px;
+}
+
+h1,
+h2,
+h3,
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+p {
+  color: var(--grey);
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

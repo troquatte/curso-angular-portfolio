@@ -1,0 +1,22 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.btn-primary,
+  &.btn-secondary {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 7px;
+  }
+
+  &-primary {
+    color: var(--black-10);
+    background-color: var(--primary);
+  }
+
+  &-secondary {
+    color: var(--white);
+    background-color: var(--secondary);
+  }
+}

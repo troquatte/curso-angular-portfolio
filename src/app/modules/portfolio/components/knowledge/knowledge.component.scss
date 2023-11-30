@@ -1,0 +1,41 @@
+:host {
+  margin-top: 25px;
+  padding: 25px 0;
+
+  background: var(--black-010);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    text-align: center;
+    margin: 0;
+  }
+
+  ul {
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    li {
+      width: 50px;
+      height: 50px;
+      background: var(--black);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border-radius: 7px;
+
+      img {
+        transform: scale(1.5);
+      }
+    }
+  }
+}
