@@ -27,6 +27,8 @@ export class ProjectsComponent {
       imgSrc: 'assets/img/projects/vfull.png',
       imgAlt: 'Projeto Vida Fullstack',
       title: 'Vida Fullstack',
+      width: '100px',
+      height: '51px',
       description:
         'Explore o fascinante mundo do desenvolvimento web no meu blog dedicado exclusivamente ao ecossistema Angular, Front-end, JavaScript, Node.js e TypeScript. Desvende os segredos por trás da construção de interfaces modernas, aprimore suas habilidades de programação front-end quanto back-end e mergulhe em conceitos avançados de JavaScript e TypeScript.',
       links: [
