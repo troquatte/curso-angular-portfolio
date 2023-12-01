@@ -20,11 +20,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 5px;
 
     li {
       width: 50px;
       height: 50px;
+      // flex: 20%;
       background: var(--black);
 
       display: flex;

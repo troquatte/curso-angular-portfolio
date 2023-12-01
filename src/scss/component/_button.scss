@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  transition: 0.5s;
 
   &.btn-primary,
   &.btn-secondary {
@@ -12,11 +14,20 @@
 
   &-primary {
     color: var(--black-10);
-    background-color: var(--primary);
+    background: var(--primary);
+
+    &:hover {
+      background: var(--primary-010);
+      color: var(--white);
+    }
   }
 
   &-secondary {
     color: var(--white);
-    background-color: var(--secondary);
+    background: var(--secondary);
+
+    &:hover {
+      background: var(--secondary-010);
+    }
   }
 }

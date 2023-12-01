@@ -1,5 +1,8 @@
 import { Component, inject, signal } from '@angular/core';
 
+// Enum
+import { EDialogPanelClass } from '../../../enum/EDialog-panel-class.enum';
+
 // Material
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 
@@ -28,17 +31,17 @@ export class ProjectsComponent {
         'Explore o fascinante mundo do desenvolvimento web no meu blog dedicado exclusivamente ao ecossistema Angular, Front-end, JavaScript, Node.js e TypeScript. Desvende os segredos por trás da construção de interfaces modernas, aprimore suas habilidades de programação front-end quanto back-end e mergulhe em conceitos avançados de JavaScript e TypeScript.',
       links: [
         {
-          name: 'Blog / Site',
+          name: 'Conheça o Blog',
           href: 'https://vidafullstack.com.br/',
         },
       ],
     },
   ]);
 
-  openDialog(data: IProjects) {
+  public openDialog(data: IProjects) {
     this.#dialog.open(DialogProjectsComponent, {
       data,
-      panelClass: 'dialog-container',
+      panelClass: EDialogPanelClass.PROJECTS,
     });
   }
 }
