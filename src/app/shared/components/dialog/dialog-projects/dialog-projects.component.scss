@@ -46,4 +46,8 @@
   nav {
     display: flex;
   }
+
+  @media (max-width: 750px) {
+    padding: 30px;
+  }
 }

@@ -4,8 +4,10 @@
   @for(item of arrayExperiences(); track item; let first = $first){
   <details [open]="first">
     <summary>
-      <strong> {{ item.summary.strong }} </strong>
-      {{ item.summary.p }}
+      <p>
+        <strong> {{ item.summary.strong }} </strong>
+        {{ item.summary.p }}
+      </p>
     </summary>
     <p>
       {{ item.text }}

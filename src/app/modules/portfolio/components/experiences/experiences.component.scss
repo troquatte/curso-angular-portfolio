@@ -13,15 +13,14 @@
 
   details {
     overflow: hidden;
-    position: relative;
     margin-top: 10px;
     background: var(--black-010);
-    color: var(--white);
     border-radius: 7px;
+    color: var(--white);
 
     p,
     summary {
-      padding: 10px 30px;
+      padding: 10px 20px;
       transition: 500ms ease-out;
     }
 
@@ -29,37 +28,36 @@
       cursor: pointer;
 
       display: flex;
-      flex-direction: column;
-      background: var(--primary);
-      font-size: 14px;
-      color: var(--black-010);
-    }
+      justify-content: space-between;
+      align-items: center;
 
-    &[open]::before,
-    &:not([open])::before {
-      position: absolute;
-      right: 30px;
-      top: 15px;
+      background: var(--primary);
+
+      p {
+        font-size: 14px;
+        color: var(--black-010);
+
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+      }
     }
 
     &[open] {
-      &::before {
-        content: url("../../../../../assets/icons/chevron-up.svg");
-      }
-
       summary {
+        &::after {
+          content: url("../../../../../assets/icons/chevron-up.svg");
+        }
         background: var(--primary);
         border-radius: 7px 7px 0 0 !important;
       }
     }
 
     &:not([open]) {
-      p {
-        animation: sweepC 1s;
-      }
-
-      &::before {
-        content: url("../../../../../assets/icons/chevron-down.svg");
+      summary {
+        &::after {
+          content: url("../../../../../assets/icons/chevron-down.svg");
+        }
       }
     }
   }
