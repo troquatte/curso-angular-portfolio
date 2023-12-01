@@ -12,14 +12,14 @@ Use este código para fazer consultas caso tenha dúvidas no curso.
 
 ## :custard: Acesse o GhPages
 
-Link: https://troquatte.github.io/curso-angular-portfolio/browser/
+<strong>Link:</strong> https://troquatte.github.io/curso-angular-portfolio/browser/
 
 ## :custard: Aprenda a subir o seu código no ghPages
 
-Adicione ao seu projeto: ng add angular-cli-ghpages@latest
+<strong>Adicione ao seu projeto:</strong> ng add angular-cli-ghpages@latest
 <br>
 
-Faça o deploy: ng deploy --base-href https://SEU_PERFIL_GITHUB.github.io/SEU_REPO_GITHUB/browser/
+<strong>Faça o deploy:</strong> ng deploy --base-href https://SEU_PERFIL_GITHUB.github.io/SEU_REPO_GITHUB/browser/
 
 ---
 
