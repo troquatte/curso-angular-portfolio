@@ -1,23 +1,23 @@
 <section>
-  <h2 mat-dialog-title>
-    {{ getData()?.title }}
-  </h2>
+  <h2 mat-dialog-title>{{ getData()?.title }}</h2>
 
   <button (click)="closeModal()">
     <img src="assets/icons/dialog/close.svg" alt="Botão para fechar o modal" />
   </button>
 </section>
 
-<h3>Descrição:</h3>
+<mat-dialog-content>
+  <h3>Descrição:</h3>
 
-<p>
-  {{ getData()?.description }}
-</p>
+  <p>
+    {{ getData()?.description }}
+  </p>
 
-<nav>
-  @for(item of getData()?.links; track item){
-  <a [href]="item.href" target="_blank" class="btn btn-primary">
-    {{ item.name }}
-  </a>
-  }
-</nav>
+  <nav>
+    @for(item of getData()?.links; track item){
+    <a [href]="item.href" target="_blank" class="btn btn-primary">
+      {{ item.name }}
+    </a>
+    }
+  </nav>
+</mat-dialog-content>
