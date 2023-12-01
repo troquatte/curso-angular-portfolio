@@ -18,10 +18,11 @@
     border-radius: 7px;
     color: var(--white);
 
-    p,
+    article,
     summary {
       padding: 10px 20px;
       transition: 500ms ease-out;
+      color: var(--grey);
     }
 
     summary {

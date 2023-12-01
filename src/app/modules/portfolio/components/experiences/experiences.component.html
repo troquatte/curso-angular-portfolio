@@ -9,9 +9,7 @@
         {{ item.summary.p }}
       </p>
     </summary>
-    <p>
-      {{ item.text }}
-    </p>
+    <article [innerHTML]="item.text"></article>
   </details>
   }
 </div>
