@@ -1,7 +1,7 @@
 import { Component, inject, signal } from '@angular/core';
 
 // Enum
-import { EDialogPanelClass } from '../../../enum/EDialog-panel-class.enum';
+import { EDialogPanelClass } from '../../enum/EDialog-panel-class.enum';
 
 // Material
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
