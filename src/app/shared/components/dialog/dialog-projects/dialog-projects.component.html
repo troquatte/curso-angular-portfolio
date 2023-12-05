@@ -9,9 +9,7 @@
 <mat-dialog-content>
   <h3>Descrição:</h3>
 
-  <p>
-    {{ getData()?.description }}
-  </p>
+  <article [innerHTML]="getData()?.description"></article>
 
   <nav>
     @for(item of getData()?.links; track item){
