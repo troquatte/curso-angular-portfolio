@@ -14,25 +14,21 @@
   }
 
   &.btn-primary {
-    & {
-      color: var(--black-10);
-      background: var(--primary);
+    color: var(--black-010);
+    background: var(--primary);
 
-      &:hover {
-        background: var(--primary-010);
-        color: var(--white);
-      }
+    &:hover {
+      background: var(--primary-010);
+      color: var(--white);
     }
   }
 
   &.btn-secondary {
-    & {
-      color: var(--white);
-      background: var(--secondary);
+    color: var(--white);
+    background: var(--secondary);
 
-      &:hover {
-        background: var(--secondary-010);
-      }
+    &:hover {
+      background: var(--secondary-010);
     }
   }
 }

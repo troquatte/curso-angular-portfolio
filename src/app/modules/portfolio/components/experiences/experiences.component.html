@@ -1,8 +1,8 @@
 <div class="container">
-  <h2>Últimas Experiências</h2>
+  <h2>Útimas Experiências</h2>
 
-  @for(item of arrayExperiences(); track item; let first = $first){
-  <details [open]="first">
+  @for(item of arrayExperiences(); track item;){
+  <details>
     <summary>
       <p>
         <strong> {{ item.summary.strong }} </strong>

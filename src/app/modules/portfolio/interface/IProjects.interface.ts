@@ -1,12 +1,14 @@
 export interface IProjects {
-  imgSrc: string;
-  imgAlt: string;
+  src: string;
+  alt: string;
   title: string;
-  description: string;
-  width: string;
+  with: string;
   height: string;
-  links: Array<{
-    name: string;
-    href: string;
-  }>;
+  description: string;
+  links: [
+    {
+      name: string;
+      href: string;
+    }
+  ];
 }

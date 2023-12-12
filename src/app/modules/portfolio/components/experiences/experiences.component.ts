@@ -1,4 +1,6 @@
 import { Component, signal } from '@angular/core';
+
+// Interface
 import { IExperiences } from '../../interface/IExperiences.interface';
 
 @Component({
@@ -27,7 +29,7 @@ export class ExperiencesComponent {
     {
       summary: {
         strong: 'Consultor Web',
-        p: 'Everis | Set 2018 - Set 2019',
+        p: 'Consultor Web | Set 2018 - Set 2019',
       },
       text: '<p>Em minha jornada como consultor web, tive a oportunidade de ser a ponte para várias empresas embarcarem no universo online.</p> <p>Por meio de projetos cuidadosamente elaborados, explorei o vasto espectro do desenvolvimento front-end, utilizando Html5, Css3, Javascript, TypeScript, Angular e Angular Material.</p> <p>Nos bastidores, no back-end, construí robustas infraestruturas com NodeJs (Express/NestJs), Sequelize/TypeOrm e integrações eficientes com bancos de dados MySql/Postgress.</p>',
     },

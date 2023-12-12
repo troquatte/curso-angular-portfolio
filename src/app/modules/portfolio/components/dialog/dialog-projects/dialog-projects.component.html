@@ -1,13 +1,13 @@
-<section>
+<header>
   <h2 mat-dialog-title>{{ getData()?.title }}</h2>
 
   <button (click)="closeModal()">
-    <img src="assets/icons/dialog/close.svg" alt="Botão para fechar o modal" />
+    <img src="assets/icons/dialog/close.svg" alt="Botão para fechar o dialog" />
   </button>
-</section>
+</header>
 
 <mat-dialog-content>
-  <h3>Descrição:</h3>
+  <h3>Descrição</h3>
 
   <article [innerHTML]="getData()?.description"></article>
 

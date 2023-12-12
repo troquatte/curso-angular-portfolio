@@ -16,13 +16,11 @@
     margin-top: 10px;
     background: var(--black-010);
     border-radius: 7px;
-    color: var(--white);
 
-    article,
-    summary {
+    summary,
+    article {
       padding: 10px 20px;
-      transition: 500ms ease-out;
-      color: var(--grey);
+      transition: 0.5s;
     }
 
     summary {
@@ -39,6 +37,8 @@
         color: var(--black-010);
 
         padding: 0;
+        margin: 0;
+
         display: flex;
         flex-direction: column;
       }
@@ -48,9 +48,10 @@
       summary {
         &::after {
           content: url("../../../../../assets/icons/chevron-up.svg");
+          margin-top: 5px;
         }
-        background: var(--primary);
-        border-radius: 7px 7px 0 0 !important;
+
+        border-radius: 7px 7px 0 0;
       }
     }
 
@@ -58,6 +59,7 @@
       summary {
         &::after {
           content: url("../../../../../assets/icons/chevron-down.svg");
+          margin-top: 5px;
         }
       }
     }

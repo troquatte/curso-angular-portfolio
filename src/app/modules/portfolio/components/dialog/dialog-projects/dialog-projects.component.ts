@@ -4,7 +4,9 @@ import {
   MatDialogModule,
   MatDialogRef,
 } from '@angular/material/dialog';
-import { IProjects } from '../../../../modules/portfolio/interface/IProjects.interface';
+
+// Interface
+import { IProjects } from '../../../interface/IProjects.interface';
 
 @Component({
   selector: 'app-dialog-projects',
@@ -15,7 +17,7 @@ import { IProjects } from '../../../../modules/portfolio/interface/IProjects.int
 })
 export class DialogProjectsComponent implements OnInit {
   constructor(
-    private dialogRef: MatDialogRef<DialogProjectsComponent>,
+    private _dialogRef: MatDialogRef<DialogProjectsComponent>,
     @Inject(MAT_DIALOG_DATA) private _data: IProjects
   ) {}
 
@@ -26,6 +28,6 @@ export class DialogProjectsComponent implements OnInit {
   }
 
   public closeModal() {
-    return this.dialogRef.close();
+    return this._dialogRef.close();
   }
 }
